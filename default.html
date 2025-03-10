@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css" media="screen">
+        * {
+            font-size: 21pt;
+        }
+        #user {
+            background-color: #E6E6FA;
+            font-size: 32px;
+        }
+        #todo {
+            border: 4px solid powderblue;
+            font-size: 40px;
+            padding: 30px;
+            font-family: georgia, garamond, serif;
+            font-style: italic;
+        }
+        .unselectable { 
+            -webkit-user-select: none; 
+            -moz-user-select: none; 
+            -ms-user-select: none; 
+            user-select: none;    
+            color: #cc0000;
+        }
+        input[type='submit'], [type='reset'] {
+            padding:5px 30px;
+            background: #cce6ff;
+            border: none;
+            border-radius: 30px;
+        }
+        input[type='text'], [type='password'] {
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            outline: none;
+        }
+        fieldset {
+            border: 0;
+        }
+        body {
+            background: url("https://www.toptal.com/designers/subtlepatterns/patterns/geometry2.png");
+            margin: 0;
+            padding: 0;
+        }
+
+        /* CSS cho icon ngôi nhà */
+        .home-icon {
+            position: fixed;  /* hoặc absolute, nhưng fixed sẽ giữ icon cố định khi cuộn trang */
+            top: 10px;
+            left: 10px;
+            width: 32px;
+            height: 32px;
+            z-index: 9999; /* đảm bảo icon luôn nổi trên cùng */
+        }
+    </style>
+</head>
+<body>
+    <!-- Icon ngôi nhà, nhấn vào sẽ về index.php -->
+    <a href="index.php">
+        <img src="img/house.png" alt="Home" class="home-icon">
+    </a>
+
+    <div>
+        <center id="todo">Todo Application</center>
+    </div>
+</body>
+</html>
