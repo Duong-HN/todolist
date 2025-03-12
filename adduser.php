@@ -14,12 +14,12 @@
             createUser($username, $pass1);
         }
         else {
-            $_SESSION['error'] = "&nbsp; password do not match";
+            $_SESSION['error'] = "&nbsp; Mật khẩu không khớp";
             header('location:signup.php');
         }
     }
     else {
-        $_SESSION['error'] = "&nbsp; Invalid captcha code";
+        $_SESSION['error'] = "&nbsp; Captcha không đúng.";
         header('location:signup.php');
     }
  ?>

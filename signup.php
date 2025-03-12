@@ -25,7 +25,7 @@
             <table>
                 <tbody>
                     <tr>
-                        <td><pre>User Name </pre></td>
+                        <td><pre>Student ID </pre></td>
                         <td><input type="text" name="username" placeholder="Duong" autocomplete="off"></td>
                     </tr>
                     <tr>

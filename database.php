@@ -115,7 +115,7 @@ function updatepassword($username, $password) {
     mysqli_query($conn, $sql);
     mysqli_close($conn);
 
-    $_SESSION['error'] = "<br> &nbsp; Password Updated !! ";
+    $_SESSION['error'] = "<br> &nbsp; Đổi Password thành công";
     header('Location: todo.php');
     exit();
 }
@@ -156,7 +156,7 @@ function createUser($username, $password) {
         header('Location: todo.php');
         exit();
     } else {
-        $_SESSION['error'] = "&nbsp; Username already exists !! ";
+        $_SESSION['error'] = "&nbsp; Người dùng đã tồn tại. ";
         header('Location: signup.php');
         exit();
     }
@@ -167,7 +167,7 @@ function createUser($username, $password) {
  */
 function isValid($username, $password, $usercaptcha) {
     if (!isset($_SESSION['captcha']) || $usercaptcha !== $_SESSION['captcha']) {
-        $_SESSION['error'] = "&nbsp; Invalid captcha code !! ";
+        $_SESSION['error'] = "&nbsp; Captcha không đúng. ";
         header('Location: login.php');
         exit();
     }

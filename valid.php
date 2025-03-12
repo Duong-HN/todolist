@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['error'] = "Sai mật khẩu.";
         }
     } else {
-        $_SESSION['error'] = "Username không tồn tại.";
+        $_SESSION['error'] = "Student ID không tồn tại.";
     }
     mysqli_close($conn);
     header("Location: login.php");
