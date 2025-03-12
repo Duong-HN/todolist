@@ -1,87 +1,56 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Todo Application Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f0f0f0;
-            margin: 0;
-            padding: 0;
+            background: url('img/phen.png') no-repeat center center fixed; 
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            font-family: 'Georgia', serif;
         }
-        header {
-            background: #007bff;
-            color: #fff;
-            padding: 20px 20px;
-            position: relative;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .auth-links {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-        .auth-links a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 15px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #343a40;
-            color: #fff;
+        .content {
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 600px;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
+        .btn-custom {
+            background-color: #cce6ff;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 30px;
+            color: #000;
+            transition: none !important;
+        }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Todo Application Project</h1>
-        <div class="auth-links">
-            <a href="login.php">Login</a>
-            <a href="newuser.php">Sign Up</a>
-        </div>
-    </header>
-    
-    <main>
-        <h2>About This Project</h2>
-        <p>
-            This is a simple Todo Application built with PHP and MySQL. It allows users to manage their tasks by adding, editing, and deleting them.
-        </p>
-        <p>
-            <strong>Features:</strong>
-        </p>
-        <ul>
+    <div class="content">
+        <h1 class="display-4">Welcome to Todo Application Project</h1>
+        <p class="lead">This project is built using PHP and MySQL to manage tasks efficiently.</p>
+        <hr>
+        <h3>Features:</h3>
+        <ul class="text-start">
             <li>User Registration and Login</li>
             <li>Add, Edit, Delete Todo Items</li>
             <li>Admin Dashboard for User Management</li>
             <li>Password Management and Captcha Verification</li>
         </ul>
-        <p>
-            Explore the project to learn how to build a dynamic web application with PHP!
-        </p>
-    </main>
-    
-    <footer>
-        &copy; <?php echo date("Y"); ?> Todo Application Project. All rights reserved.
-    </footer>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="login.php" class="btn btn-custom">Login</a>
+            <a href="signup.php" class="btn btn-custom">Sign Up</a>
+        </div>
+    </div>
 </body>
 </html>

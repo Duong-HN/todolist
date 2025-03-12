@@ -10,11 +10,18 @@
             font-size: 32px;
         }
         #todo {
-            border: 4px solid powderblue;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
             font-size: 40px;
             padding: 30px;
             font-family: georgia, garamond, serif;
             font-style: italic;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
         }
         .unselectable { 
             -webkit-user-select: none; 
@@ -39,13 +46,18 @@
             border: 0;
         }
         body {
-            background: url("https://www.toptal.com/designers/subtlepatterns/patterns/geometry2.png");
+            background: url('img/html.jfif') no-repeat center center fixed;
+            background-size: cover;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            background: url('img/html.png');
             margin: 0;
             padding: 0;
         }
 
         /* CSS cho icon ngôi nhà */
         .home-icon {
+            mix-blend-mode: difference;
+            filter: invert(1); /* Đổi màu icon thành trắng */   
             position: fixed;  /* hoặc absolute, nhưng fixed sẽ giữ icon cố định khi cuộn trang */
             top: 10px;
             left: 10px;
