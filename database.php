@@ -157,7 +157,7 @@ function createUser($username, $password) {
         exit();
     } else {
         $_SESSION['error'] = "&nbsp; Username already exists !! ";
-        header('Location: newuser.php');
+        header('Location: signup.php');
         exit();
     }
 }

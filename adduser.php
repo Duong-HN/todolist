@@ -15,12 +15,12 @@
         }
         else {
             $_SESSION['error'] = "&nbsp; password do not match";
-            header('location:newuser.php');
+            header('location:signup.php');
         }
     }
     else {
         $_SESSION['error'] = "&nbsp; Invalid captcha code";
-        header('location:newuser.php');
+        header('location:signup.php');
     }
  ?>
 

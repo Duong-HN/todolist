@@ -40,7 +40,7 @@
         <h1 class="display-4">Welcome to Todo Application Project</h1>
         <p class="lead">This project is built using PHP and MySQL to manage tasks efficiently.</p>
         <hr>
-        <h3>Features:</h3>
+        <h3>Features</h3>
         <ul class="text-start">
             <li>User Registration and Login</li>
             <li>Add, Edit, Delete Todo Items</li>

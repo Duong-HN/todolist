@@ -54,7 +54,7 @@ ob_end_flush();
     <!-- Bạn có thể include default.html tại đây nếu muốn, hoặc copy nội dung của nó -->
     <?php include('default.html'); ?>
     
-    <p style="white-space:pre">  Don't have an account? <a href="newuser.php" style="color: red; text-decoration: none">Create New Account</a> </p> 
+    <p style="white-space:pre">  Don't have an account? <a href="signup.php" style="color: red; text-decoration: none">Create New Account</a> </p> 
     
     <?php error(); ?>
 
